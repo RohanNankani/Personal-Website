@@ -1,38 +1,284 @@
-.App {
-  text-align: center;
+#root {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* enable vertical scrolling */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 43%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home > h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Playfair Display';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home .buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.home img {
+    width: 225px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home button {
+    font-size: 1em;
+    padding: 10px;
+    margin: 5px;
+}
+
+.about-me-container {
+    position: absolute;
+    top: 600px;
+    left: 485px;
+    background-color: #da5d7a; /* light gray background */
+    border-radius: 10px;
+    padding: 20px; /* space around the content */
+    width: 50%; /* take up 80% of the width of the parent element */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); /* drop shadow for a "lifted" effect */
+}
+
+
+.about-me-container h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.about-me-container {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.skills-container h1 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.skills-container .languages {
+    position: absolute;
+    top: 600px;
+    left: 400px;
+    background-color: lightgray; /* light gray background */
+    border-radius: 20px;
+    padding: 20px; /* space around the content */
+    width: 15%; /* take up 80% of the width of the parent element */
+    height: 25%;
+    box-shadow: 0px 10px 16px 0px rgba(40, 70, 160, 0.65); /* drop shadow for a "lifted" effect */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skills-container .languages img {
+    width: 50%;
+    height: auto;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.skills-container .languages .css-logo {
+    width: 35%;
+    border-radius: 0px;
+}
+
+.skills-container .frameworks {
+    position: absolute;
+    top: 600px;
+    left: 800px;
+    background-color: lightblue; /* light gray background */
+    border-radius: 20px;
+    padding: 20px; /* space around the content */
+    width: 15%; /* take up 80% of the width of the parent element */
+    height: 25%;
+    box-shadow: 0px 10px 16px 0px rgba(40, 70, 160, 0.65); /* drop shadow for a "lifted" effect */
+}
+
+.skills-container .technologies {
+    position: absolute;
+    top: 600px;
+    left: 1200px;
+    background-color: lightblue; /* light gray background */
+    border-radius: 20px;
+    padding: 20px; /* space around the content */
+    width: 15%; /* take up 80% of the width of the parent element */
+    height: 25%;
+    box-shadow: 0px 10px 16px 0px rgba(40, 70, 160, 0.65); /* drop shadow for a "lifted" effect */
+}
+
+.skills-container {
+    color: #000000;
+    font-size: 20px;
+}
+
+.projects-container {
+    overflow-y: auto;
+}
+
+.projects-container .project1 .laser-guitar {
+    width: 95%; /* adjust this to change the width of the image */
+    height: auto; /* adjust this to change the height of the image */
+    display: block; /* center the image */
+    margin: auto;
+    margin-top: 8%;
+    border-radius: 0;
+}
+
+.projects-container .project1 {
+    position: absolute;
+    top: 600px;
+    left: 400px;
+    background-color: #da5d7a; /* light gray background */
+    border-radius: 10px;
+    padding: 20px; /* space around the content */
+    width: 25%; /* take up 80% of the width of the parent element */
+    height: 32%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); /* drop shadow for a "lifted" effect */
+}
+
+.projects-container .project1 h1 {
+    color: white;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.projects-container .project1 {
+    transition: transform 0.3s;
+}
+
+.projects-container .project1:hover {
+    transform: scale(1.05);
+}
+
+.projects-container .project2 {
+    position: absolute;
+    top: 600px;
+    left: 1000px;
+    background-color: #da5d7a; /* light gray background */
+    padding: 20px; /* space around the content */
+    border-radius: 10px;
+    width: 25%; /* take up 80% of the width of the parent element */
+    height: 32%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); /* drop shadow for a "lifted" effect */
+}
+
+.projects-container .project2 .bike-lock {
+    width: 70%; /* adjust this to change the width of the image */
+    height: auto; /* adjust this to change the height of the image */
+    display: block; /* center the image */
+    margin: auto;
+    margin-top: -5px;
+    border-radius: 0;
+}
+
+.projects-container .project2 h1 {
+    color: white;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.projects-container .project2 {
+    transition: transform 0.3s;
+}
+
+.projects-container .project2:hover {
+    transform: scale(1.05);
+}
+
+.projects-container .project3 {
+    position: absolute;
+    top: 990px;
+    left: 1000px;
+    background-color: #da5d7a; /* light gray background */
+    border-radius: 10px;
+    padding: 20px; /* space around the content */
+    width: 25%; /* take up 80% of the width of the parent element */
+    height: 32%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); /* drop shadow for a "lifted" effect */
+}
+
+.projects-container .project3 .lyfts-back-end {
+    width: 76%; 
+    height: auto; 
+    display: block; 
+    margin: auto;
+    margin-top: -5px;
+    border-radius: 0;
+}
+
+.projects-container .project3 h1 {
+    color: white;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.projects-container .project3 {
+    transition: transform 0.3s;
+}
+
+.projects-container .project3:hover {
+    transform: scale(1.05);
+}
+
+.projects-container .project4 {
+    position: absolute;
+    top: 990px;
+    bottom: 1000px;
+    left: 400px;
+    background-color: #da5d7a; /* light gray background */
+    border-radius: 10px;
+    padding: 20px; /* space around the content */
+    width: 25%; /* take up 80% of the width of the parent element */
+    height: 32%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); /* drop shadow for a "lifted" effect */
+}
+
+.projects-container .project4 .jp-swe {
+    width: 75%; 
+    height: auto; 
+    display: block; 
+    margin: auto;
+    margin-top: -5px;
+    border-radius: 0;
+}
+
+.projects-container .project4 h1 {
+    color: white;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.projects-container .project4 {
+    transition: transform 0.3s;
+}
+
+.projects-container .project4:hover {
+    transform: scale(1.05);
+}
+
+.bottom-navigation {
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    width: fit-content;
 }
