@@ -1,7 +1,7 @@
 #root {
     display: flex;
     flex-direction: column;
-    overflow-y: auto; /* enable vertical scrolling */
+    overflow-y: auto; 
 }
 
 .home {
@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 43%;
+    margin-bottom: 55%;
 }
 
 .home > h1 {
@@ -50,13 +50,15 @@
 
 .about-me-container {
     position: absolute;
-    top: 600px;
-    left: 485px;
-    background-color: #da5d7a; /* light gray background */
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 70%;
+    background-color: #da5d7a; 
     border-radius: 10px;
-    padding: 20px; /* space around the content */
-    width: 50%; /* take up 80% of the width of the parent element */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); /* drop shadow for a "lifted" effect */
+    padding: 20px;
+    width: 50%; 
+    height: 30%; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); 
 }
 
 .about-me-container h1 {
@@ -70,9 +72,9 @@
 }
 
 .projects-container .project1 .laser-guitar {
-    width: 95%; /* adjust this to change the width of the image */
-    height: auto; /* adjust this to change the height of the image */
-    display: block; /* center the image */
+    width: 95%; 
+    height: auto; 
+    display: block; 
     margin: auto;
     margin-top: 8%;
     border-radius: 0;
@@ -80,14 +82,14 @@
 
 .projects-container .project1 {
     position: absolute;
-    top: 600px;
-    left: 415px;
-    background-color: #da5d7a; /* light gray background */
+    top: 70%;
+    left: 21%;
+    background-color: #da5d7a;
     border-radius: 10px;
-    padding: 20px; /* space around the content */
-    width: 25%; /* take up 80% of the width of the parent element */
+    padding: 20px; 
+    width: 25%; 
     height: 32%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); /* drop shadow for a "lifted" effect */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); 
 }
 
 .projects-container .project1 h1 {
@@ -106,20 +108,20 @@
 
 .projects-container .project2 {
     position: absolute;
-    top: 600px;
-    left: 985px;
-    background-color: #da5d7a; /* light gray background */
-    padding: 20px; /* space around the content */
+    top: 70%;
+    left: 53%;
+    background-color: #da5d7a; 
+    padding: 20px; 
     border-radius: 10px;
-    width: 25%; /* take up 80% of the width of the parent element */
+    width: 25%; 
     height: 32%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); /* drop shadow for a "lifted" effect */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); 
 }
 
 .projects-container .project2 .bike-lock {
-    width: 70%; /* adjust this to change the width of the image */
-    height: auto; /* adjust this to change the height of the image */
-    display: block; /* center the image */
+    width: 70%; 
+    height: auto; 
+    display: block; 
     margin: auto;
     margin-top: -5px;
     border-radius: 0;
@@ -141,18 +143,18 @@
 
 .projects-container .project3 {
     position: absolute;
-    top: 990px;
-    left: 985px;
-    background-color: #da5d7a; /* light gray background */
+    top: 115%;
+    left: 53%;
+    background-color: #da5d7a; 
     border-radius: 10px;
-    padding: 20px; /* space around the content */
-    width: 25%; /* take up 80% of the width of the parent element */
+    padding: 20px; 
+    width: 25%; 
     height: 32%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); /* drop shadow for a "lifted" effect */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); 
 }
 
 .projects-container .project3 .lyfts-back-end {
-    width: 76%; 
+    width: 65%; 
     height: auto; 
     display: block; 
     margin: auto;
@@ -176,15 +178,15 @@
 
 .projects-container .project4 {
     position: absolute;
-    top: 990px;
     bottom: 1000px;
-    left: 415px;
-    background-color: #da5d7a; /* light gray background */
+    top: 115%;
+    left: 21%;
+    background-color: #da5d7a; 
     border-radius: 10px;
-    padding: 20px; /* space around the content */
-    width: 25%; /* take up 80% of the width of the parent element */
+    padding: 20px; 
+    width: 25%; 
     height: 32%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); /* drop shadow for a "lifted" effect */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.65); 
 }
 
 .projects-container .project4 .jp-swe {
