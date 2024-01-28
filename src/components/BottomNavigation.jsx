@@ -24,7 +24,7 @@ const BottomBar = () => {
                 <BottomNavigationAction
                 label="Email"
                 icon={<AlternateEmailIcon />}
-                href="/email" 
+                href="mailto:rnankani@uwaterloo.ca" 
                 sx={{ '&:hover': { color: 'blue' } }}
                 />
             </BottomNavigation>
